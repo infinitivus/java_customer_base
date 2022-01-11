@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/com/project/infinitivus/customerbase/data/data_base/ClearData.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/project/infinitivus/customerbase/data/data_base/CreateSchemaAndTable.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/project/infinitivus/customerbase/data/data_base/DeleteData.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/project/infinitivus/customerbase/data/data_base/InsertData.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/project/infinitivus/customerbase/data/data_base/SelectData.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/project/infinitivus/customerbase/data/data_base/UpdateData.java" dialect="GenericSQL" />
+  </component>
+</project>

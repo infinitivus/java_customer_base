@@ -1,0 +1,5 @@
+1
+jdbc:mysql://localhost:3306/alexbase
+root
+admin
+tablealex
