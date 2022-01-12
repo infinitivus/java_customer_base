@@ -1,7 +1,7 @@
 package com.project.infinitivus.customerbase.service.settings.setting_db;
 
-import com.project.infinitivus.customerbase.data.ChoosingStorageMethod;
 import com.project.infinitivus.customerbase.data.data_base.ApplySettingDB;
+import com.project.infinitivus.customerbase.view.output.OutputInfoSetting;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  */
 public class SettingDB {
 
-    final String SETTING_LINE_DB = "src\\main\\java\\com\\project"
+    public final String SETTING_LINE_DB = "src\\main\\java\\com\\project"
             + "\\infinitivus\\customerbase\\service\\system_file\\settingsDB.txt";
 
     public void readSettingsDB() {
@@ -25,7 +25,6 @@ public class SettingDB {
             String dbPassword = reader.readLine();
             String tableName = reader.readLine();
             dataTransmission(dbType, dbPath, dbLogin, dbPassword, tableName);
-            ChoosingStorageMethod.iSelect.select();
         } catch (IOException e) {
             Logger.getLogger(SettingDB.class
                     .getName()).log(Level.SEVERE, null, e);
@@ -33,6 +32,7 @@ public class SettingDB {
     }
 
     void dataTransmission(String dbType, String dbPath, String dbLogin, String dbPassword, String tableName) {
+        new OutputInfoSetting().OutputSettingDB(dbType,dbPath,dbLogin,dbPassword,tableName);
         new ApplySettingDB(dbType, dbPath, dbLogin, dbPassword, tableName);
     }
 }

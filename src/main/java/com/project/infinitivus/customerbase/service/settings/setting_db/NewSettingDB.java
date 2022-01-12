@@ -6,7 +6,6 @@ import com.project.infinitivus.customerbase.view.input.menu.MenuSettingDB;
 /**
  * @author infinitivus
  */
-
 public class NewSettingDB extends SettingDB {
     private final CreateSchemaAndTable createSchemaAndTable = new CreateSchemaAndTable();
 

@@ -1,8 +1,11 @@
 package com.project.infinitivus.customerbase.service.settings.setting_program;
 
-import com.project.infinitivus.customerbase.data.ChoosingStorageMethod;
+import com.project.infinitivus.customerbase.data.ChoosingStorage;
 import com.project.infinitivus.customerbase.service.settings.setting_db.SettingDB;
+import com.project.infinitivus.customerbase.service.work_with_person.Person;
+import com.project.infinitivus.customerbase.view.input.security.SecurityComparePassword;
 import com.project.infinitivus.customerbase.view.output.Localization;
+import com.project.infinitivus.customerbase.view.output.OutputInfoSetting;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -33,9 +36,14 @@ public class SettingProgram {
 
     private void applySetting() {
         new Localization().installationLanguage(language);
-        new ChoosingStorageMethod().choosingStorageMethod(optionSaving);
+        new ChoosingStorage().choosingStorageMethod(optionSaving);
+        new SecurityComparePassword().comparePassword();
+        new OutputInfoSetting().OutputSettingProgram(optionSaving);
+        Person person = new Person("Infinitivus", "Alex", "89104378665", "aals@ya.ru", "", "", "", "", "", "");
+        Person.list.add(person);
         if (optionSaving == 2) {
             new SettingDB().readSettingsDB();
         }
+        ChoosingStorage.iSelect.select();
     }
 }

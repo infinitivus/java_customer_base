@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  * @author infinitivus
  */
 public class CreateDirectoryAndFile {
-    private final Path CREATE_DIRECTORY_LIBRARY = Paths.get("src\\main\\java\\com"
+    public final Path CREATE_DIRECTORY_LIBRARY = Paths.get("src\\main\\java\\com"
             + "\\project\\infinitivus\\customerbase\\data\\file\\library");
     final String PERSON_LIBRARY_LINE = "src\\main\\java\\com\\project\\"
             + "infinitivus\\customerbase\\data\\file\\library\\person_list.txt";

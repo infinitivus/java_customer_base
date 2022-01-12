@@ -7,7 +7,7 @@ import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMess
 /**
  * @author infinitivus
  */
-public class InputMainMenu {
+public class MainMenuInput {
 
     public int inputNumberMenu() {
         IOutputMessage mainMenu = new OutputMessageColumn();

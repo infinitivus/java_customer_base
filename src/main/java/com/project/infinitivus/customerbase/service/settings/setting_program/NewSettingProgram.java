@@ -1,6 +1,6 @@
 package com.project.infinitivus.customerbase.service.settings.setting_program;
 
-import com.project.infinitivus.customerbase.data.ChoosingStorageMethod;
+import com.project.infinitivus.customerbase.data.ChoosingStorage;
 import com.project.infinitivus.customerbase.data.file.CreateDirectoryAndFile;
 import com.project.infinitivus.customerbase.service.settings.setting_db.NewSettingDB;
 import com.project.infinitivus.customerbase.view.input.menu.MenuSettingProgram;
@@ -17,7 +17,7 @@ public class NewSettingProgram {
         int lang = menuSettingProgram.settingLanguage();
         new Localization().installationLanguage(lang);
         int optionSave = menuSettingProgram.settingOptionSave();
-        new ChoosingStorageMethod().choosingStorageMethod(optionSave);
+        new ChoosingStorage().choosingStorageMethod(optionSave);
         new SaveSettingProgram().saveSettingProgram(lang, optionSave);
         if (optionSave == 1) {
             new CreateDirectoryAndFile().createDirectory();

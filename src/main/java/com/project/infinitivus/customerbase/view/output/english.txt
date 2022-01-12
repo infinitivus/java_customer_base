@@ -3,7 +3,7 @@ security:Enter the password that you will use to log in to the application in th
 errorSecurity:An error occurred while verifying the password!
 errorInputPerson:Attention! You have entered incorrect data. Fields with * are required to be filled in. Leave the other fields empty or enter data according to the sample
 inputPerson:Enter your last name (from 3 to 15 letters)*:Enter your first name or patronymic (from 3 to 15 letters each)*:Enter the phone number according to the sample (+7(123)4567890)*:Enter the mail according to the sample (qwerty@asd.zxc ):Enter the date of birth according to the sample (01.02.2020):Enter the brand according to the sample (Lada):Enter a model based on the sample (Granta):Enter the VIN number according to the sample (AAAAA234FG345RS22):Enter the model year of manufacture (1999):Enter the registration number according to the sample (O999XX11):The entry has been added to the list
-mainMenu:0- Exit:1- Brief information:2- Detailed information:3- Create a record:4- Edit an entry:5- Delete an entry:6- Record search:7- Sorting records:8- Creating a file for printing/In the process of development:9- Settings:Please enter the operation number(to exit 0):Main Menu:Mistake! Enter a number from '0' to '9'
+mainMenu:0- Exit:1- Brief information:2- Detailed information:3- Create a record:4- Edit an entry:5- Delete an entry:6- Record search:7- Sorting records:8- Copy the list:9- Settings:Please enter the operation number(to exit 0):Main Menu:Mistake! Enter a number from '0' to '9'
 sortingMenu:Select the list sorting method:1- Sort the list by last name:2- Sort the list by name:3- Sort by trailer/motorhome brand:4- Sort by year of release:The list is sorted
 errorInputOutput:Attention! Input/Output error:Attention! There is no such entry in the list:Mistake! The menu item number was entered incorrectly:Mistake! Enter the number '1' or '2'
 headerTable:Surname:First name Patronymic:Phone number:Email:Birthday:Stamp:Model:Vin:Year:State.
@@ -12,11 +12,12 @@ the inputSearch list:Enter a string to search for matches:No matches found with 
 inputEdit:Enter the number of the record you are editing:Enter the number of the item to edit:1-Last name:2-First Name and Patronymic:3-Phone:4-Mail:5th birthday:6-Motorhome brand:7-Motorhome model:8-VIN number:9-Year of release:10th State number:Enter new information:The record has been changed successfully!: Would you like to continue editing this entry?(Y-yes, other key-No)
 newSettingDB:The database settings file already exists! Do you want to create new database settings?(Y-Yes, other key-No)
 settingDB:Enter the database type (1-MySQL, 2-PostgreSQL):Enter the path to the database:Enter the database login:Enter the database password:Enter the database name:Enter the name of the tables
-outputSettingProgram:User Settings:Interface language - Russian:The way to store data is to save it to a file locally:The way to store data is to save it to the database remotely
+outputSettingProgram:User Settings:Interface language - English:The way to store data is to save it to a file locally:The way to store data is to save it to the database remotely
 outputSettingDB:Database Settings :Database type - MySQL:Database type - PostgreSQL:Database Path - :Database Login - :Database Password-:Table Name -
-copyBackupFileToDB:Would you like to save entries from the list to the database?:Attention! When saving, old records in the database will be lost!:Save records to the database? (Y-Yes, other key-No)
+copyBackupFileToDB:Would you like to save entries from the list to the database?:Attention! When saving, the old records in the database will be lost!:Save records to the database? (Y-Yes, other key-No)
 copyDBToBackupFile:The data file already exists, when creating a new file, the data will be lost!Do you want to continue? (Y-yes, other key-No):Would you like to transfer data from the list to a file?(Y-Yes, other key-No)
 endProgram:Save a copy of the list locally? (Y-Yes, Other character-No):Thank you for using the program! All the best!
 errorConnectivityDB:The driver file is missing. Unable to connect to the database:Incorrect connection data.
 connectivityDB:Creating a database...:The database has been created successfully:Creating a table...:The table was created successfully:-The list is loaded from
-createFile:Library directory created:Library file created
+the CreateFile database:Library directory created:Library file created
+fullSaveList:Select a place to copy the list (1-copy the list to a file,2-copy the list to the database):Attention! When copying, all old data will be deleted! Continue?(Y-yes, other key-No):The list is copied to a local file:The list has been copied to the database

@@ -6,7 +6,7 @@ import com.project.infinitivus.customerbase.data.file.*;
 /**
  * @author infinitivus
  */
-public class ChoosingStorageMethod {
+public class ChoosingStorage {
     public static IUpdate iUpdate;
     public static ISelect iSelect;
     public static IInsert iInsert;

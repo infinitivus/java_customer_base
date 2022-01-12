@@ -1,7 +1,9 @@
 package com.project.infinitivus.customerbase.service.settings;
 
+import com.project.infinitivus.customerbase.service.settings.setting_program.NewSettingProgram;
 import com.project.infinitivus.customerbase.service.work_with_person.*;
-import com.project.infinitivus.customerbase.view.input.menu.InputMainMenu;
+import com.project.infinitivus.customerbase.view.input.menu.MainMenuInput;
+import com.project.infinitivus.customerbase.view.input.menu.MenuFullSaveList;
 import com.project.infinitivus.customerbase.view.output.OutputInfoPerson;
 
 /**
@@ -9,7 +11,7 @@ import com.project.infinitivus.customerbase.view.output.OutputInfoPerson;
  */
 public class MainMenu {
     int inputNumber;
-    InputMainMenu inputMainMenu = new InputMainMenu();
+    MainMenuInput inputMainMenu = new MainMenuInput();
 
     public void mainMenu() {
         do {
@@ -36,9 +38,11 @@ public class MainMenu {
                 case 7:
                     new SortedPerson().menuSorted();
                     break;
-                case 8: // Create File Print Person
+                case 8:
+                    new MenuFullSaveList().selectFullSaveList();
                     break;
-                case 9: // Settings
+                case 9:
+                    new NewSettingProgram().newSettingProgram();
                     break;
             }
         } while (inputNumber != 0);

@@ -26,8 +26,6 @@ public class FirstStart extends SettingProgram {
                 Files.createDirectories(CREATE_DIRECTORY_SYSTEM);
                 new NewSettingProgram().newSettingProgram();
                 new SecurityInputPassword().createPassword();
-                Person person = new Person("Infinitivus", "Alex", "89104378665", "aals@ya.ru", "", "", "", "", "", "");
-                Person.list.add(person);
             }
         } catch (
                 IOException e) {

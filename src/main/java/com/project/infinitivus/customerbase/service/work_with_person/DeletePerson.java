@@ -1,6 +1,6 @@
 package com.project.infinitivus.customerbase.service.work_with_person;
 
-import com.project.infinitivus.customerbase.data.ChoosingStorageMethod;
+import com.project.infinitivus.customerbase.data.ChoosingStorage;
 import com.project.infinitivus.customerbase.view.input.InputDeletePerson;
 import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMessageColumn;
 
@@ -21,7 +21,7 @@ public class DeletePerson {
 
     private void threadInsert() {
         new Thread(() -> {
-            ChoosingStorageMethod.iDelete.delete();    /////////////////////////////////////////
+            ChoosingStorage.iDelete.delete();    /////////////////////////////////////////
         }).start();
     }
 }

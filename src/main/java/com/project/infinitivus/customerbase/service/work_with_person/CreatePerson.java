@@ -1,7 +1,7 @@
 package com.project.infinitivus.customerbase.service.work_with_person;
 
 
-import com.project.infinitivus.customerbase.data.ChoosingStorageMethod;
+import com.project.infinitivus.customerbase.data.ChoosingStorage;
 import com.project.infinitivus.customerbase.view.input.InputDataPerson;
 import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMessageColumn;
 import com.project.infinitivus.customerbase.view.output.OutputTable;
@@ -35,7 +35,7 @@ public class CreatePerson {
     private void threadInsert() {
         new Thread(() -> {
             int i = Person.list.size() - 1;
-            ChoosingStorageMethod.iInsert.insert(i);
+            ChoosingStorage.iInsert.insert(i);
         }).start();
     }
 }

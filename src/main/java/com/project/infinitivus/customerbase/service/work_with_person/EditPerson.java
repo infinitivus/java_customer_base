@@ -1,6 +1,6 @@
 package com.project.infinitivus.customerbase.service.work_with_person;
 
-import com.project.infinitivus.customerbase.data.ChoosingStorageMethod;
+import com.project.infinitivus.customerbase.data.ChoosingStorage;
 import com.project.infinitivus.customerbase.view.input.InputDataPerson;
 import com.project.infinitivus.customerbase.view.input.InputEditPerson;
 import com.project.infinitivus.customerbase.view.input.choose_from_two.IChooseFromTwo;
@@ -66,7 +66,7 @@ public class EditPerson {
 
     private void threadInsert(int numberPerson) {
         new Thread(() -> {
-            ChoosingStorageMethod.iUpdate.update(numberPerson);   /////////////////////////////////////////
+            ChoosingStorage.iUpdate.update(numberPerson);   /////////////////////////////////////////
         }).start();
     }
 }
