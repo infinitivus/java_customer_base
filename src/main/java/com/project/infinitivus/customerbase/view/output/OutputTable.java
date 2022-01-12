@@ -17,7 +17,7 @@ public class OutputTable {
             HEADER_DATA .get(10));
      private final String SHORT_HEADER = String.format("N. " + SHORT_SPECIFIER, HEADER_DATA .get(1), HEADER_DATA .get(2), HEADER_DATA .get(3),
             HEADER_DATA .get(4), HEADER_DATA .get(5));
-    private String DODDEDLINE = "------------------------------------------------------------------------------"
+    private final String DODDEDLINE = "------------------------------------------------------------------------------"
             + "----------------------------------------------------------------------------------------------------------------";
     String SHORT_DODDEDLINE = "-----------------------------------------------------------------------------------------------------";
 

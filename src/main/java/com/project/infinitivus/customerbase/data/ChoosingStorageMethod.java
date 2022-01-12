@@ -1,9 +1,11 @@
 package com.project.infinitivus.customerbase.data;
 
-
 import com.project.infinitivus.customerbase.data.data_base.*;
 import com.project.infinitivus.customerbase.data.file.*;
 
+/**
+ * @author infinitivus
+ */
 public class ChoosingStorageMethod {
     public static IUpdate iUpdate;
     public static ISelect iSelect;

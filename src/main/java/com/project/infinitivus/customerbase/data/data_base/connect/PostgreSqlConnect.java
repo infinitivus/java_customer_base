@@ -10,6 +10,9 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * @author infinitivus
+ */
 public class PostgreSqlConnect implements IConnect {
     private Connection dbConnection = null;
 

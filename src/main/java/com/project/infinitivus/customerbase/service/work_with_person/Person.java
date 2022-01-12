@@ -1,15 +1,14 @@
 package com.project.infinitivus.customerbase.service.work_with_person;
 
-/**
- * @author infinitivus
- */
-
 import com.project.infinitivus.customerbase.view.output.OutputInfoPerson;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * @author infinitivus
+ */
 public class Person {
 
     public static List<Person> list = new ArrayList<>();

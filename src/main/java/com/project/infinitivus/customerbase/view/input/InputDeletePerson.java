@@ -6,11 +6,14 @@ import com.project.infinitivus.customerbase.view.input.choose_from_two.InputYesO
 import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMessageColumn;
 import com.project.infinitivus.customerbase.view.output.OutputTable;
 
+/**
+ * @author infinitivus
+ */
 public class InputDeletePerson {
-    private InputInt numberDeletePerson = new InputInt();
-    private OutputMessageColumn outputMessageColumn = new OutputMessageColumn();
-    private IChooseFromTwo chooseDelete = new InputYesOrNo();
-    private OutputTable outputTable = new OutputTable();
+    private final InputInt numberDeletePerson = new InputInt();
+    private final OutputMessageColumn outputMessageColumn = new OutputMessageColumn();
+    private final IChooseFromTwo chooseDelete = new InputYesOrNo();
+    private final OutputTable outputTable = new OutputTable();
 
     public int inputDeletePerson() {
         int numberDelete;

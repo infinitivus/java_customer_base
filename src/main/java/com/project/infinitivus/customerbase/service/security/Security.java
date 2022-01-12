@@ -1,8 +1,5 @@
 package com.project.infinitivus.customerbase.service.security;
-/**
- *
- * @author aals
- */
+
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 import java.security.NoSuchAlgorithmException;
@@ -11,12 +8,15 @@ import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
 import java.util.Arrays;
 
+/**
+ * @author infinitivus
+ */
 class Security {
 
     final String SECURITY_PROGRAM_KEY = "src\\main\\java\\com\\project"
-            + "\\infinitivus\\customerbase\\logic\\security\\securityKey.bin";
+            + "\\infinitivus\\customerbase\\service\\security\\securityKey.bin";
     final String SECURITY_PROGRAM_SALT = "src\\main\\java\\com\\project"
-            + "\\infinitivus\\customerbase\\logic\\security\\securitySalt.bin";
+            + "\\infinitivus\\customerbase\\service\\security\\securitySalt.bin";
 
     boolean authenticate(String attemptedPassword, byte[] encryptedPassword, byte[] salt)
             throws NoSuchAlgorithmException, InvalidKeySpecException {

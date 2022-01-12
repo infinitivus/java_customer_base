@@ -6,8 +6,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
 
 /**
- *
- * @author aals
+ * @author infinitivus
  */
 public class ComparisonSecurityPassword extends Security {
 

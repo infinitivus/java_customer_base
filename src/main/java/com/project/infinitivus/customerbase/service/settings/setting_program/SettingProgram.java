@@ -14,11 +14,9 @@ import java.util.logging.Logger;
  * @author aals
  */
 public class SettingProgram {
-    //    final String LIBRARY_LINE_BACKUP = "src\\main\\java\\com\\project"
-//            + "\\infinitivus\\customerbase\\data\\file\\library\\backup_copy.txt";
-//     final Path LIBRARY_BACKUP = Paths.get(LIBRARY_LINE_BACKUP);
+
     final String SETTING_LINE_PROGRAM = "src\\main\\java\\com\\project"
-            + "\\infinitivus\\customerbase\\logic\\system_file\\settingsProgram.txt";
+            + "\\infinitivus\\customerbase\\service\\system_file\\settingsProgram.txt";
 
     private int optionSaving;
     private int language;

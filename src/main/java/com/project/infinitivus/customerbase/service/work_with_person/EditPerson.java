@@ -8,7 +8,6 @@ import com.project.infinitivus.customerbase.view.input.choose_from_two.InputYesO
 import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMessageColumn;
 import com.project.infinitivus.customerbase.view.output.OutputTable;
 
-
 /**
  * @author infinitivus
  */

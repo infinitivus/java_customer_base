@@ -4,9 +4,12 @@ import com.project.infinitivus.customerbase.service.work_with_person.Person;
 import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMessageColumn;
 import com.project.infinitivus.customerbase.view.output.OutputTable;
 
+/**
+ * @author infinitivus
+ */
 public class InputEditPerson {
-    private OutputMessageColumn outputMessageColumn = new OutputMessageColumn();
-    private InputInt inputInt = new InputInt();
+    private final OutputMessageColumn outputMessageColumn = new OutputMessageColumn();
+    private final InputInt inputInt = new InputInt();
 
 
     public int inputNumberPerson() {

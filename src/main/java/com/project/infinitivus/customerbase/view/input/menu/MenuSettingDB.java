@@ -8,8 +8,8 @@ import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMess
  * @author infinitivus
  */
 public class MenuSettingDB {
-    private IOutputMessage iOutputMessage = new OutputMessageColumn();
-    private InputString input = new InputString();
+    private final IOutputMessage iOutputMessage = new OutputMessageColumn();
+    private final InputString input = new InputString();
 
     public String typeDB(String keyMessage,int valueMessage) {
         String dbType;

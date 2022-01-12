@@ -1,6 +1,8 @@
 package com.project.infinitivus.customerbase.view.input.choose_from_two;
 
+/**
+ * @author infinitivus
+ */
 public interface IChooseFromTwo {
-    public boolean choose(String key,int value);
-
+    boolean choose(String key, int value);
 }

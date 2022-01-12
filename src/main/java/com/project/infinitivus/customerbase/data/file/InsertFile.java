@@ -9,6 +9,9 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * @author infinitivus
+ */
 public class InsertFile extends CreateDirectoryAndFile implements IInsert {
 
     @Override

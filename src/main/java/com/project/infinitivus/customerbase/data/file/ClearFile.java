@@ -9,6 +9,9 @@ import java.nio.file.StandardOpenOption;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * @author infinitivus
+ */
 public class ClearFile extends CreateDirectoryAndFile implements IClear {
 
     public void clear() {

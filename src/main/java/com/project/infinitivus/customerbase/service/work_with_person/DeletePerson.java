@@ -9,8 +9,8 @@ import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMess
  * @author Infinitivus
  */
 public class DeletePerson {
-    private InputDeletePerson inputDeletePerson = new InputDeletePerson();
-    private OutputMessageColumn outputMessageColumn = new OutputMessageColumn();
+    private final InputDeletePerson inputDeletePerson = new InputDeletePerson();
+    private final OutputMessageColumn outputMessageColumn = new OutputMessageColumn();
 
     public void deletePerson() {
         int personDelete = inputDeletePerson.inputDeletePerson();

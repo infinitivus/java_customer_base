@@ -3,6 +3,9 @@ package com.project.infinitivus.customerbase.data.file;
 import com.project.infinitivus.customerbase.data.IUpdate;
 import com.project.infinitivus.customerbase.service.work_with_person.Person;
 
+/**
+ * @author infinitivus
+ */
 public class UpdateFile extends CreateDirectoryAndFile implements IUpdate {
     @Override
     public void update(int notUsed) {

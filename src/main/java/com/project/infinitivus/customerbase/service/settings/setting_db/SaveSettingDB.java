@@ -5,6 +5,10 @@ import java.io.RandomAccessFile;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * @author infinitivus
+ */
+
 class SaveSettingDB extends SettingDB {
 
     void saveSettingDB(String dbType, String dbPath, String dbLogin, String dbPassword, String tableName) {

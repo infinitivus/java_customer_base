@@ -10,6 +10,9 @@ import java.nio.file.Paths;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * @author infinitivus
+ */
 public class CreateDirectoryAndFile {
     private final Path CREATE_DIRECTORY_LIBRARY = Paths.get("src\\main\\java\\com"
             + "\\project\\infinitivus\\customerbase\\data\\file\\library");

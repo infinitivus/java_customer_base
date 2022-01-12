@@ -11,9 +11,12 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * @author infinitivus
+ */
 public class UpdateData implements IUpdate {
     private Connection dbConnection = null;
-    private Statement statement = null;
+    private final Statement statement = null;
 
     @Override
     public void update(int i) {

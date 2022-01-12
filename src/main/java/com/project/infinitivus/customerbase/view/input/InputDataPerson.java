@@ -6,7 +6,7 @@ import com.project.infinitivus.customerbase.view.output.OutputMessage.IOutputMes
 import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMessageColumn;
 
 /**
- * @author aals
+ * @author infinitivus
  */
 public class InputDataPerson {
     private boolean verificationResult;

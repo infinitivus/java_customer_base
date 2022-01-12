@@ -10,9 +10,9 @@ import com.project.infinitivus.customerbase.view.output.OutputTable;
  * @author Infinitivus
  */
 public class CreatePerson {
-    private InputDataPerson dataPerson = new InputDataPerson();
-    private OutputTable outputTable = new OutputTable();
-    private OutputMessageColumn outputMessageColumn = new OutputMessageColumn();
+    private final InputDataPerson dataPerson = new InputDataPerson();
+    private final OutputTable outputTable = new OutputTable();
+    private final OutputMessageColumn outputMessageColumn = new OutputMessageColumn();
 
     public void createPerson() {
         String surname = dataPerson.inputData(1);
@@ -35,112 +35,7 @@ public class CreatePerson {
     private void threadInsert() {
         new Thread(() -> {
             int i = Person.list.size() - 1;
-            ChoosingStorageMethod.iInsert.insert(i);    /////////////////////////////////////////
+            ChoosingStorageMethod.iInsert.insert(i);
         }).start();
     }
 }
-
-
-//    }
-//    private void threadInsert() {
-//        new Thread(() -> {
-//            int i = Person.list.size()-1;
-//            if (Settings.optionSaving.equals("1")) {
-//                new SaveToFile().savePersonToFile(i);
-//            } else {
-//                 new SqlMethods().insertRows(i);
-//            }
-//        }
-//        ).start();
-//    }
-
-
-//
-//    PatternInputPerson patternPerson = new PatternInputPerson();
-//    String surName, name, phone, email, birthday, brand, model, vin, year, licensePlate;
-//    
-//    public void inputCreatePerson() {
-//        
-//        System.out.println(Localization.inputPersonArray[0]);
-//        do {
-//            surName = InputData.inputString();
-//        } while (!patternPerson.patternSurName(surName));
-//        
-//        System.out.println(Localization.inputPersonArray[1]);
-//        do {
-//            name = InputData.inputString();
-//        } while (!patternPerson.patternName(name));
-//        
-//        System.out.println(Localization.inputPersonArray[2]);
-//        do {
-//            phone = InputData.inputString();
-//        } while (!patternPerson.patternPhone(phone));
-//        
-//        System.out.println(Localization.inputPersonArray[3]);
-//        do {
-//            email = InputData.inputString();
-//        } while (!patternPerson.patternEmail(email));
-//        
-//        System.out.println(Localization.inputPersonArray[4]);
-//        do {
-//            birthday = InputData.inputString();
-//        } while (!patternPerson.patternBirthday(birthday));
-//        
-//        System.out.println(Localization.inputPersonArray[5]);
-//        do {
-//            brand = InputData.inputString();
-//        } while (!patternPerson.patternBrand(brand));
-//        
-//        System.out.println(Localization.inputPersonArray[6]);
-//        do {
-//            model = InputData.inputString();
-//        } while (!patternPerson.patternModel(model));
-//        
-//        System.out.println(Localization.inputPersonArray[7]);
-//        do {
-//            vin = InputData.inputString();
-//        } while (!patternPerson.patternVin(vin));
-//        
-//        System.out.println(Localization.inputPersonArray[8]);
-//        do {
-//            year = InputData.inputString();
-//        } while (!patternPerson.patternYear(year));
-//        
-//        System.out.println(Localization.inputPersonArray[9]);
-//        do {
-//            licensePlate = InputData.inputString();
-//        } while (!patternPerson.patternLicensePlate(licensePlate));
-//    }
-
-//    private void outputCreatePerson() {
-//        System.out.println(DODDEDLINE + "\n" + Localization.message[0] + DODDEDLINE);
-//        System.out.format(HEADER);
-//        System.out.println("\n" + DODDEDLINE);
-//        System.out.println(Person.list.size() - 1 + ". " + Person.list.get(Person.list.size() - 1));
-//        System.out.println(DODDEDLINE);
-//    }
-
-//    public void saveNewPerson() {
-//        Person inputPerson = new Person(surName, name, phone, email, birthday, brand, model, vin, year, licensePlate);
-//        Person.list.add(inputPerson);
-//    }
-//    
-//    public void mainCreatePerson() {
-//        inputCreatePerson();
-//        saveNewPerson();
-//        threadInsert();
-//        outputCreatePerson();
-//    }
-//    
-//    private void threadInsert() {
-//        new Thread(() -> {
-//            int i = Person.list.size()-1;
-//            if (Settings.optionSaving.equals("1")) {
-//                new SaveToFile().savePersonToFile(i);
-//            } else {
-//                 new SqlMethods().insertRows(i);
-//            }
-//        } 
-//        ).start();
-//    }
-//}

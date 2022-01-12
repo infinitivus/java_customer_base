@@ -10,6 +10,9 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * @author infinitivus
+ */
 public class SelectData implements ISelect {
     private Connection dbConnection = null;
     private Statement statement = null;

@@ -1,7 +1,6 @@
 package com.project.infinitivus.customerbase.service.work_with_person;
 
 /**
- *
  * @author infinitivus
  */
 public class RegexInputPerson {

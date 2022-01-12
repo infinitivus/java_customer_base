@@ -4,9 +4,9 @@ import com.project.infinitivus.customerbase.view.input.InputString;
 import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMessageColumn;
 
 public class InputOneOrTwo implements IChooseFromTwo {
-    private InputString inputString = new InputString();
-    private OutputMessageColumn messageColumn = new OutputMessageColumn();
-    private OutputMessageColumn outputMessageColumn = new OutputMessageColumn();
+    private final InputString inputString = new InputString();
+    private final OutputMessageColumn messageColumn = new OutputMessageColumn();
+    private final OutputMessageColumn outputMessageColumn = new OutputMessageColumn();
 
     @Override
     public boolean choose(String key, int value) {

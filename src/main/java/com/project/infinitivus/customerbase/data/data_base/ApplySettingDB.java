@@ -4,6 +4,9 @@ import com.project.infinitivus.customerbase.data.data_base.connect.MySqlConnect;
 import com.project.infinitivus.customerbase.data.data_base.connect.PostgreSqlConnect;
 import com.project.infinitivus.customerbase.data.data_base.connect.IConnect;
 
+/**
+ * @author infinitivus
+ */
 public class ApplySettingDB {
     static IConnect iSqlConnect;
     private static String dbType;

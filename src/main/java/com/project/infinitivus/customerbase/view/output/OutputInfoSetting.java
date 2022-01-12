@@ -5,7 +5,7 @@ import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMess
 import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMessageLine;
 
 public class OutputInfoSetting {
-   private IOutputMessage iOutputMessage = new OutputMessageColumn();
+   private final IOutputMessage iOutputMessage = new OutputMessageColumn();
 
     public void OutputSettingProgram(int optionSave) {
         iOutputMessage.outputMessage("outputSettingProgram", 1);
@@ -18,7 +18,6 @@ public class OutputInfoSetting {
     }
 
     public void OutputSettingDB(String dbType, String dbPath, String dbLogin,String dbPassword,String tableName) {
-
         iOutputMessage.outputMessage("outputSettingDB", 1);
         if (dbType.equals("1")) {
             iOutputMessage.outputMessage("outputSettingDB", 2);

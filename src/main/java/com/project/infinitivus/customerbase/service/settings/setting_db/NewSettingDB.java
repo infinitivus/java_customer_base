@@ -3,8 +3,12 @@ package com.project.infinitivus.customerbase.service.settings.setting_db;
 import com.project.infinitivus.customerbase.data.data_base.CreateSchemaAndTable;
 import com.project.infinitivus.customerbase.view.input.menu.MenuSettingDB;
 
+/**
+ * @author infinitivus
+ */
+
 public class NewSettingDB extends SettingDB {
-    private CreateSchemaAndTable createSchemaAndTable = new CreateSchemaAndTable();
+    private final CreateSchemaAndTable createSchemaAndTable = new CreateSchemaAndTable();
 
     public void getSettingDB() {
         MenuSettingDB menuSettingDB = new MenuSettingDB();

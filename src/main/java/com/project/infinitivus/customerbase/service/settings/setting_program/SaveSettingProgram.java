@@ -6,6 +6,9 @@ import java.io.PrintStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * @author infinitivus
+ */
 class SaveSettingProgram extends SettingProgram {
     void saveSettingProgram(int language, int optionSaving) {
         try (FileOutputStream fileOutput = new FileOutputStream(SETTING_LINE_PROGRAM);

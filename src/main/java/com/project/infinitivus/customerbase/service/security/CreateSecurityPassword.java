@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author aals
+ * @author infinitivus
  */
 public class CreateSecurityPassword extends Security {
 

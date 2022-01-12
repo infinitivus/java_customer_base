@@ -4,6 +4,9 @@ import com.project.infinitivus.customerbase.view.input.InputInt;
 import com.project.infinitivus.customerbase.view.output.OutputMessage.IOutputMessage;
 import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMessageColumn;
 
+/**
+ * @author infinitivus
+ */
 public class InputMainMenu {
 
     public int inputNumberMenu() {

@@ -3,6 +3,9 @@ package com.project.infinitivus.customerbase.view.input.choose_from_two;
 import com.project.infinitivus.customerbase.view.input.InputString;
 import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMessageColumn;
 
+/**
+ * @author infinitivus
+ */
 public class InputYesOrNo implements IChooseFromTwo {
 
     @Override

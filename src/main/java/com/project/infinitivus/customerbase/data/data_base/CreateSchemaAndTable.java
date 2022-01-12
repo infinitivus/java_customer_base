@@ -2,7 +2,6 @@ package com.project.infinitivus.customerbase.data.data_base;
 
 import com.project.infinitivus.customerbase.view.output.OutputMessage.IOutputMessage;
 import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMessageColumn;
-import com.project.infinitivus.customerbase.view.output.OutputMessage.OutputMessageLine;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -10,10 +9,13 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * @author infinitivus
+ */
 public class CreateSchemaAndTable {
     private Connection dbConnection = null;
     private Statement statement = null;
-    private IOutputMessage iOutputMessage = new OutputMessageColumn();
+    private final IOutputMessage iOutputMessage = new OutputMessageColumn();
     private String sql;
 
     public void createSchema(String dbName) {

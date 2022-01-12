@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 public class SettingDB {
 
     final String SETTING_LINE_DB = "src\\main\\java\\com\\project"
-            + "\\infinitivus\\customerbase\\logic\\system_file\\settingsDB.txt";
+            + "\\infinitivus\\customerbase\\service\\system_file\\settingsDB.txt";
 
     public void readSettingsDB() {
         try (BufferedReader reader = new BufferedReader(new FileReader(SETTING_LINE_DB))) {
